@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <label>Введите первый город</label><br>
+        <input type="text" name="city1" id="city1"> <br>
+        <label>Введите второй город</label><br>
+        <input type="text" name="city2" id="city2"> <br>
+        <button type="submit">Отправить!</button>
+    </form>
+    <p>Погода в начальном городе: {{ message_city1 }}</p>
+    <p>Погода в конечном городе: {{ message_city2 }}</p>
+    {{ message_city2 }}
+    {{ error }}
+</body>
+</html>
